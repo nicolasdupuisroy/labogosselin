@@ -1,0 +1,1 @@
+function etiree = stretch(im)% etiree = stretchPlus(im)% Fred Gosselin, 05/02/03im = double(im);etiree = (im - min(im(:))) / (max(im(:)) - min(im(:)));
