@@ -1,0 +1,1 @@
+function list = loadListOfImages(listName)fid=fopen(listName);marker = 1;while 1	line = fgetl(fid);	if ~isstr(line), break, end	list{marker} = line;	marker = marker + 1;endfclose(fid);

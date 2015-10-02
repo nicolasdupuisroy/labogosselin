@@ -1,0 +1,1 @@
+function response = CheckResp(theKey, keyPoss, keyCode, data)temp = findstr(theKey, keyPoss);if ~isempty(temp)	response = eq(keyCode(temp), data);else	response = 0;end
